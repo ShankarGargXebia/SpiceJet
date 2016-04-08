@@ -1709,11 +1709,11 @@ public class Actions {
      *********************************************************************************************/
 
     public boolean clickObject() throws Exception {
-	ThreadSleep(2000);
+	ThreadSleep(1500);
 	try {
 	    explicitWait("elementtobeclickable", null);
 	    testObject.click();
-	    ThreadSleep(1500);
+	    ThreadSleep(1000);
 	    return true;
 	} catch (Exception e) {
 	    exceptionMessage(e);
