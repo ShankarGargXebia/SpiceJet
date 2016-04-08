@@ -38,7 +38,7 @@ sno,parent,testobject,objType,how,what,comments
 22,MobileHomePage,Date_10,icon,xpath,//table[@class='ui-datepicker-calendar']//a[text()='10'],
 23,MobileHomePage,City_AMD,link,xpath,//android.widget.CheckedTextView[@text='Ahmedabad (AMD)'],
 24,MobileHomePage,City_BLR,link,xpath,//android.widget.CheckedTextView[@text='Bengaluru (BLR)'],
-25,MobileHomePage,LogIn,link,text,Log In,
+25,MobileHomePage,LogIn,link,id,ctl00_HyperLink1,
 26,MobileHomePage,MemberLogin,link,xpath,"//*[@id=""smoothmenu2""]/li/ul/li[1]/a",
 27,MobileHomePage,UserID,textField,xpath,//input[@id='ControlGroupLoginView_MemberLoginView2LoginView_TextBoxUserID'],
 28,MobileHomePage,PassWord,textField,xpath,"//*[@id=""ControlGroupLoginView_MemberLoginView2LoginView_PasswordFieldPassword""]",
