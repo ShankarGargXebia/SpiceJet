@@ -5,6 +5,15 @@
 
 package testDriver;
 
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.ios.IOSElement;
+import io.appium.java_client.remote.MobileCapabilityType;
+
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Robot;
@@ -92,18 +101,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.UnexpectedTagNameException;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import reporting.LogFile;
 import Common.Property;
 import Common.Utility;
 import dataReader.DBReader;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileBy;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.ios.IOSElement;
-import io.appium.java_client.remote.MobileCapabilityType;
-import reporting.LogFile;
 
 @SuppressWarnings("unused")
 public class Actions {
@@ -1709,11 +1710,10 @@ public class Actions {
 
     public boolean clickObject() throws Exception {
 	ThreadSleep(2000);
-	ThreadSleep(5000);
 	try {
 	    explicitWait("elementtobeclickable", null);
 	    testObject.click();
-	    ThreadSleep(2000);
+	    ThreadSleep(1500);
 	    return true;
 	} catch (Exception e) {
 	    exceptionMessage(e);
@@ -6369,7 +6369,6 @@ public class Actions {
 	try {
 	    explicitWait("elementtobeclickable", null);
 	    ((MobileElement) testObject).tap(1, 500);
-
 	    ThreadSleepNative(2000);
 	    return true;
 	} catch (Exception e) {
