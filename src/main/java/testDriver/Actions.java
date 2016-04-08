@@ -5,15 +5,6 @@
 
 package testDriver;
 
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileBy;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.ios.IOSElement;
-import io.appium.java_client.remote.MobileCapabilityType;
-
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Robot;
@@ -101,10 +92,18 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.UnexpectedTagNameException;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import reporting.LogFile;
 import Common.Property;
 import Common.Utility;
 import dataReader.DBReader;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.ios.IOSElement;
+import io.appium.java_client.remote.MobileCapabilityType;
+import reporting.LogFile;
 
 @SuppressWarnings("unused")
 public class Actions {
@@ -321,28 +320,26 @@ public class Actions {
 			driver.quit();
 			driver = null;
 		    }
-		    //for android Onboarding
+		    // for android Onboarding
 		    if (dataContentFirst.equalsIgnoreCase("onboarding")) {
-			androidAppActivity="com.mckinsey.insights.BootStrapActivity";
+			androidAppActivity = "com.mckinsey.insights.BootStrapActivity";
+		    } else {
+			androidAppActivity = "com.mckinsey.insights.home.HomeActivity";
+			// com.mckinsey.insights.home.MostPopularActivity
 		    }
-		    else{
-			androidAppActivity="com.mckinsey.insights.home.HomeActivity";
-			//com.mckinsey.insights.home.MostPopularActivity
-		    }
-		    
-		    //for iOS Onboarding
+
+		    // for iOS Onboarding
 		    if (!dataContentSecond.equalsIgnoreCase("")) {
 			driver = initDriverIOS(dataContentSecond);
-		    }
-		    else {
+		    } else {
 			driver = initDriver();
 		    }
-		    
-		} 
-		//when browser is not native
+
+		}
+		// when browser is not native
 		else {
 		    // dataContentFirst variable will be used to set URL
-		    dataContentFirst = "http://www.mckinsey.com/";
+		    dataContentFirst = "http://www.spicejet.com/";
 		    // call init method of seleniumImplemention here.
 		    this.property.setStepDescription("Open a new browser and navigate to URL '" + dataContentFirst + "'");
 		    if (driver == null) {
@@ -714,11 +711,12 @@ public class Actions {
 		    }
 		} else if ((this.property.getBrowserName().toLowerCase().contains("ios") && this.property.getBrowserName().toLowerCase().contains("web"))
 		        || this.property.getBrowserName().equalsIgnoreCase("safari")) {
-		    skip=true;
-		    //verification = cutRequiredImageSafari(dataContentFirst);
+		    skip = true;
+		    // verification = cutRequiredImageSafari(dataContentFirst);
 		} else if ((this.property.getBrowserName().toLowerCase().contains("android") && this.property.getBrowserName().toLowerCase().contains("web"))) {
-		    skip=true;
-		    //verification = cutRequiredImageAndroidChrome(dataContentFirst);
+		    skip = true;
+		    // verification =
+		    // cutRequiredImageAndroidChrome(dataContentFirst);
 		} else {
 
 		    skip = true;
@@ -1411,8 +1409,8 @@ public class Actions {
 
 		    driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
 		    ThreadSleepNative(2500);
-		    //driver.findElement(By.name("YES")).click();
-		    //ThreadSleepNative(2500);
+		    // driver.findElement(By.name("YES")).click();
+		    // ThreadSleepNative(2500);
 		}
 		// iOS Native
 		else if (this.property.getBrowserName().toLowerCase().contains("ios") && this.property.getBrowserName().toLowerCase().contains("native")) {
@@ -1585,7 +1583,7 @@ public class Actions {
 	    capabilities.setCapability("platformVersion", this.property.platformVersion);
 	    // capabilities.setCapability("avd", "AndroidPhone");
 	    // capabilities.setCapability("fullReset", "true");
-	 
+
 	    capabilities.setCapability("appPackage", "com.mckinsey.mckinseyinsights");
 	    capabilities.setCapability("appActivity", androidAppActivity);
 	    capabilities.setCapability("app", app.getAbsolutePath());

@@ -10,3 +10,4 @@ Test_Report/
 Logs/*
 /src/test/resources/
 *.iml
+/bin/

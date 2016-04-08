@@ -138,13 +138,13 @@ public class TestEngine {
 
 	    switch (property.aut) {
 	    case "web":
-		property.TestSuite = "McKinsey_Web_Automation";
+		property.TestSuite = "Web_Automation";
 		break;
 	    case "native":
-		property.TestSuite = "McKinsey_Native_Automation";
+		property.TestSuite = "Native_Automation";
 		break;
 	    default:
-		property.TestSuite = "McKinsey_Web_Automation";
+		property.TestSuite = "Web_Automation";
 		break;
 	    }
 
