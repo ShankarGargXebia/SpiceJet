@@ -6,6 +6,7 @@ sno,parent,testobject,objType,how,what,comments
 4,HomePage,CurrentDate,link,css,div.ui-datepicker-group-first a.ui-state-highlight,
 5,HomePage,OneWay,radioButton,xpath,//div[@id='flightSearchContainer']/div[@id='travelOptions']//input[@value='OneWay'],
 6,HomePage,FindFlights,Button,xpath,//input[@value='Find Flights'],
+7,HomePage,BackgroundImage,Image,id,home_banner,
 7,HomePageAndroidNative,FlightBooking,Button,id,com.vl.spicejet:id/btn_flight_booking,
 8,HomePageAndroidNative,MyBookings,Button,id,com.vl.spicejet:id/btn_my_booking,
 9,HomePageAndroidNative,CheckIn,Button,id,com.vl.spicejet:id/btn_check_in,
