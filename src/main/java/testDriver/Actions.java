@@ -3861,7 +3861,7 @@ public class Actions {
     public boolean verifyObjectPresent() throws Exception {
 	try {
 	    ThreadSleep(2500);
-	    ThreadSleepNative(2500);
+	    ThreadSleepNative(1500);
 	    explicitWait("elementsarevisible", null);
 	    ThreadSleep(2500);
 	    boolean status = testObject.isDisplayed();
