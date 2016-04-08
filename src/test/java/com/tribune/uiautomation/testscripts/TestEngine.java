@@ -148,7 +148,7 @@ public class TestEngine {
 		break;
 	    }
 
-	    property.setApplicationURL("http://www.mckinsey.com/");
+	    property.setApplicationURL("http://www.SpiceJet.com/");
 
 	    // Below information is only for Web Test cases.
 	    if (!this.property.getBrowserName().contains("native")) {
