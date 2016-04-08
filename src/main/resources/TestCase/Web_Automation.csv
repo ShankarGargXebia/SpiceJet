@@ -26,7 +26,7 @@ SpiceJet_FindFlights_Desktop,Given I Open the browser to go to default applicati
 SpiceJet_FindFlights_MobileWeb,Given I Open the browser to go to default application,NA,NA,openbrowser,,sanityMobileWeb,
 ,Comntinue to Mobile Site,MobileHomePage,MobileSite,clickObject,,,
 ,wait,NA,NA,wait,1500#,,
-,click on Login Button,MobileHomePage,LogIn,tapObject,,,
+,click on Login Button,MobileHomePage,LogIn,clickObject,,,
 ,Click on Member Login,MobileHomePage,MemberLogin,clickObject,,,
 ,enter UserId,MobileHomePage,UserID,enterdata,p.hemasundar,,
 ,Enter Password,MobileHomePage,PassWord,enterdata,12345678#,,
