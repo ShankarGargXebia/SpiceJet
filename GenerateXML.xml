@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Parallel Tests" verbose="1" thread-count="10" parallel="tests">
+	<tests>
+ 		  <test name="WritingRunTimeXML">
+			<classes>
+				<class name="com.tribune.uiautomation.testscripts.GenerateXML" />
+			</classes>
+		</test>	 		
+	</tests>
+</suite>

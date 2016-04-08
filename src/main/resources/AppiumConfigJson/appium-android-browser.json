@@ -1,0 +1,25 @@
+{
+    "capabilities":
+    [
+     {
+     "browserName": "Browser",
+     "maxInstances": 1,
+     "platform":"ANDROID"
+     }
+     ],
+    "configuration":
+    {
+        "cleanUpCycle":2000,
+        "timeout":30000,
+        "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+        "hub": "http://forgehub.tribpub.com:4444/grid/register",
+        "url":"http://10.128.32.177:4723/wd/hub",
+        "host": "10.128.32.177",
+        "port": 4723,
+        "maxSession": 1,
+        "register": true,
+        "registerCycle": 5000,
+        "hubPort": 4444,
+        "hubHost": "forgehub.tribpub.com"
+    }
+}

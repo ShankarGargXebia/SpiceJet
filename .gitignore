@@ -1,0 +1,12 @@
+.classpath
+.settings/
+target/
+bin/
+src/main/resources/BDDStepRecord/*
+src/main/resources/Execution_Log/*
+test-output/
+Test_Report/
+/bin/
+Logs/*
+/src/test/resources/
+*.iml

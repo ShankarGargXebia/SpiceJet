@@ -1,0 +1,22 @@
+{
+    "capabilities": [
+        {
+            "browserName": "safari",
+            "maxInstances": 1,
+            "platform": "MAC"
+        }
+    ],
+"configuration":
+	{
+		"timeout": 300000,
+		"hub": "http://192.168.1.134:4444/grid/register",
+		"proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+		"maxSession": 1,
+		"port": 5555,
+		"host": "192.168.2.170",
+		"register": true,
+		"hubPort": 4444,
+		"hubHost" : "192.168.1.134",
+		"role": "node"
+	}
+}

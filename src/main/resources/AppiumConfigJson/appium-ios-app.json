@@ -1,0 +1,34 @@
+{
+    "capabilities": [
+                     {
+                     "browserName": "",
+                     "version": "9.0",
+                     "maxInstances": 1,
+                     "orientation": "LANDSCAPE",
+                     "platformName": "iOS",
+                     "platform": "MAC",
+                     "app":"/Users/forgeuser/Documents/forge-grid/ChicagoTribune.app",
+                     "waitForAppScript":"$.delay(3000); $.acceptAlert();",
+                     "autoAcceptAlerts":"true",
+                     "fullReset":"true",
+                     "newCommandTimeout":999
+                     }
+                     ],
+    "configuration":
+    {
+        "cleanUpCycle": 2000,
+        "timeout": 300000,
+        "browserTimeout": 300000,
+        "hub": "http://forgehub.tribpub.com:4444/grid/register",
+        "host": "forge-ios-slave.usa.tribune.com",
+        "maxSession": 1,
+        "port": 4723,
+        "hubPort": 4444,
+        "hubHost" : "forgehub.tribpub.com",
+        "url": "http://forge-ios-slave.usa.tribune.com:4723/wd/hub",
+        "register": true,
+        "registerCycle": 5000,
+        "role": "node",
+        "throwOnCapabilityNotPresent":"false"
+    }
+}

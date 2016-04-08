@@ -1,0 +1,16 @@
+<suite name="Parallel Tests" verbose="1">
+    <tests>
+        <test name="sanity_grp">
+            <parameters>
+                <parameter name="AUT" value="web"/>
+                <parameter name="browser" value="safari"/>
+                <parameter name="TestGroup" value=""/>
+                <parameter name="TestCaseID" value="VerifyMcKinseyHomePage1"/>
+                <parameter name="TestCaseCount" value=""/>
+            </parameters>
+            <classes>
+                <class name="com.tribune.uiautomation.testscripts.TestEngine"/>
+            </classes>
+        </test>
+    </tests>
+</suite>
