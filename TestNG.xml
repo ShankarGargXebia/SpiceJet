@@ -2,10 +2,10 @@
     <tests>
         <test name="sanity_grp">
             <parameters>
-                <parameter name="AUT" value="web"/>
-                <parameter name="browser" value="safari"/>
+                <parameter name="AUT" value="native"/>
+                <parameter name="browser" value="AndroidPhonePortraitNative"/>
                 <parameter name="TestGroup" value=""/>
-                <parameter name="TestCaseID" value="VerifyMcKinseyHomePage1"/>
+                <parameter name="TestCaseID" value="SpiceJet_User_Traversing"/>
                 <parameter name="TestCaseCount" value=""/>
             </parameters>
             <classes>
